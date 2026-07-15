@@ -7,12 +7,25 @@ appropriate.)
 
 ## Lesson 0 — GitHub basics
 <!-- TODO -->
-
+The existence of GitHub and why developers use it. I also learned how the big heading, small heading, and bullet points.
+- # Big Heading
+- ## Small heading
+- Example of a Bullet point
 ## Lesson 1 — VS Code + connecting to GitHub
 <!-- TODO -->
+In this lesson, I learned more about "repo", how to download an application, how a clone works, origin, no one else can pull from my own repo, and bold and italics.
 
+- **Example of Bold**
+
+- *Example of Italics*
 ## Lesson 2 — Markdown
 <!-- TODO -->
+I learned different formats (ex. monospace and links) that provide different visuals and to code.
+ex.
+
+- `Hello`
+
+- [text](tiktok.com)
 
 ## Lesson 3 — HTML
 <!-- TODO -->
