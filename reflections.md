@@ -27,9 +27,8 @@ ex.
 
 - [text](tiktok.com)
 
-## Lesson 3 — HTML
-<!-- TODO -->
-
+## Lesson 3 — HTML 
+Lesson 3, I learned how to open the Summer Youth Project fast without having to take the long route, pwd or printing working directory, list which gives what is in the folder, changing directory, while I don't fully understand it I can see the aftermath of it like checking it with pwd or ls. In Lesson 3B, I learned the HTML version of the coding (ex. instead of putting # it would be <h1>) and I also learned comments which can be useful in the future when more HTML projects come in.
 ## Lesson 4 — CSS
 <!-- TODO -->
 
