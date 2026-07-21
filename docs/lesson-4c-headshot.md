@@ -102,6 +102,14 @@ Open your page with **Live Server** (right-click `index.html` → **Open with Li
 
 ### Step 7 — Save it
 
+Check you're in your project folder first:
+
+```
+pwd
+```
+
+Should end in `SummerYouthProject`. If not, `cd Documents\SummerYouthProject`.
+
 **▶ Try it**
 ```
 git add .
@@ -109,8 +117,20 @@ git commit -m "Add my headshot"
 git save
 ```
 
-*(If you haven't set up `git save` yet — see `setup-showcase-remote.md` — just use `git push`
-for now. Your work still saves.)*
+`git save` sends your work to both your own repo and the class showcase. Haven't set that up yet?
+Use `git push` and see `docs/setup-showcase-remote.md`.
+
+### Step 7b — Verify it uploaded
+
+> ⭐ **Photos are the most common thing to go missing on upload.** Check now, not later.
+
+1. Go to `github.com/YOUR-USERNAME/my-resume-site` and refresh.
+2. Open the `template` folder.
+3. **`headshot.jpg` should be listed there.** Click it — your photo should display in the browser.
+
+If it isn't listed, it never uploaded. Usually that means the file sits outside your project folder,
+so `git add .` never saw it. Go back to Step 3 and confirm it's in the *same* folder as
+`index.html`, then save again.
 
 ### Step 8 — Eject the drive
 

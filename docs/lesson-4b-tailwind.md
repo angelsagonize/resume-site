@@ -257,6 +257,14 @@ problem, and there's no reason to solve it today.
 
 ## Step 6 — Save your work
 
+First make sure you're in your project folder:
+
+```
+pwd
+```
+
+The path should end in `SummerYouthProject`. If not, `cd Documents\SummerYouthProject` first.
+
 **▶ Try it**
 ```
 git add .
@@ -264,7 +272,22 @@ git commit -m "Apply Tailwind layout and palette"
 git save
 ```
 
-*(Not set up with `git save` yet? Use `git push` and see `docs/setup-showcase-remote.md`.)*
+`git save` sends your work to **both** your own repo and the class showcase. If you haven't set that
+up yet, use `git push` instead and see `docs/setup-showcase-remote.md`.
+
+### Then check it in your browser
+
+> ⭐ **A command with no error has not necessarily done what you think.** Checking takes fifteen
+> seconds and catches problems while they're still easy to fix.
+
+1. Go to `github.com/YOUR-USERNAME/my-resume-site` and refresh.
+2. You should see **"Updated a few seconds ago."**
+3. Open `template` → click `index.html`.
+4. **Read the first few lines.** You should see your layout's code, not the old plain version. If it
+   still looks like your Lesson 3b page, your save didn't include the change — check you ran
+   `git add .` before committing.
+5. If you've set up the showcase: open `github.com/cjackson-coc/summer-youth-26-showcase`, click the
+   branch dropdown, and confirm `student/YOURNAME` is there with your latest work.
 
 Take a screenshot of your styled page and save it as `progress-screenshots/2-css.png` in your repo.
 Put it next to `1-html.png` from Lesson 3b. Same content, one lesson apart. That jump is the point.
