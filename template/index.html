@@ -19,7 +19,7 @@
 
 
 <script>
-  tailwind.config = { theme: { extend: {
+ tailwind.config = { darkMode: 'class', theme: { extend: {
     colors: {
       ink: '#1B1B1B',   // Body text. LOCKED - 17:1 contrast on white. Do not change.
 
@@ -47,11 +47,11 @@
 </style>
 </head>
 
-<body class="bg-white font-sans text-ink leading-normal">
+<body class="bg-white font-sans text-ink leading-normal dark:bg-ink dark:text-white">
 
  <header id="top" class="border-b-4 border-brand bg-white">
   <div class="mx-auto flex max-w-3xl flex-col items-center gap-4 px-6 py-12 sm:flex-row sm:items-center sm:gap-8">
-    <img src="headshot.jpg" alt="Laurice Hizon" class="h-32 w-32 shrink-0 rounded-full border-2 border-brand object-cover">
+    <div class="headshot-initials">LH</div>
       <div class="text-center sm:text-left">
       <h1 class="text-4xl font-bold leading-tight tracking-tight text-brand">Laurice Hizon</h1>
       <p class="mt-1 text-lg text-ink">I am a sophmore who's a Summer Youth Worker at Carson. I think about being something involving to music.</p>
@@ -60,7 +60,6 @@
      </p>
     </div>
    </div>
-    <button id="dark-mode-toggle">🌙 Dark Mode</button>
   </header>
 
   <main class="mx-auto max-w-3xl px-6"></main>
@@ -103,12 +102,19 @@
        class="inline-block rounded border-2 border-brand bg-brand px-6 py-2.5 text-base text-white no-underline transition hover:bg-accent hover:border-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
       Email me
   </section>
+
+</main>
+
 <footer id="footer" class="border-t border-slate-200 py-8 text-center text-sm text-ink">
     <p>&copy; 2026 Laurice Hizon</p>
   </footer>
-
+  <button id="dark-mode-toggle"
+        class="mx-auto mb-8 block rounded border-2 border-pop px-4 py-2 text-sm text-pop dark:border-brand dark:text-brand">
+  Dark Mode
+</button>
+ <script src="script.js"></script>
   <!-- ONLY EDIT ABOVE THIS LINE -->
 
-  <script src="script.js"></script>
+ 
 </body>
 </html>

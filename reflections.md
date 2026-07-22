@@ -31,7 +31,12 @@ ex.
 Lesson 3, I learned how to open the Summer Youth Project fast without having to take the long route, pwd or printing working directory, list which gives what is in the folder, changing directory, while I don't fully understand it I can see the aftermath of it like checking it with pwd or ls. In Lesson 3B, I learned the HTML version of the coding (ex. instead of putting # it would be <h1>) and I also learned comments which can be useful in the future when more HTML projects come in.
 ## Lesson 4 — CSS
 <!-- TODO -->
-
+## Lesson 4A
+To summarize, the difference between padding and margin that padding is the space **inside** of a box. Margin is like the space bubble **outside** for other things to keep distance away from the box.
+## Lesson 4B
+I chose the bold layout since I liked the dark color scheme of it. I unfortunately couldn't understand TailWind as I don't believe I had it working.
+## Lesson 4C
+I chose initals since it was something simplistic and if I put a photo of myself, people may assume to judge really fast or would soon to be outdated. The file getting into the right place didn't really surprise me too much. 
 ## Lesson 5 — JavaScript
 <!-- TODO -->
 
