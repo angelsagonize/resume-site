@@ -8,7 +8,7 @@
 // 1. Find the button in the page.
 //    It looks for id="dark-mode-toggle". If your button doesn't have
 //    that exact id, this line finds nothing and the file stops here.
-const toggleButton = document.getElementById('dark-mode-toggle');
+const toggleButton = document.getElementById('light-mode-toggle');
 
 // 2. Wait for someone to click it, then run the code inside.
 toggleButton.addEventListener('click', function () {
