@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laurice Hizon</title>
+
+<!-- Font. Loaded with <link>, never a CSS @import - @import makes the browser
+     wait for the stylesheet before it even discovers the font. -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap">
+
+<!-- Tailwind. No install, no build step. The orange console warning is expected - ignore it. -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  tailwind.config = { darkMode: 'class', theme: { extend: {
+    colors: {
+      ink: '#1B1B1B',   // Body text. LOCKED - 17:1 contrast on white. Do not change.
+
+      /* ============ PALETTE - EDIT THESE THREE ONLY ============ */
+      brand:  '#7F1D1D',
+      accent: '#DC2626',
+      pop:    '#FCD34D',
+      /* ============ END PALETTE ============ */
+    },
+    fontFamily: { sans: ['Sora', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+    fontSize: {
+      // clamp() = fluid type. Scales smoothly with the window, no breakpoints needed.
+      display: ['clamp(3rem, 12vw, 8rem)', { lineHeight: '0.95', letterSpacing: '-0.03em' }],
+      huge:    ['clamp(2rem, 6vw, 3.5rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+    },
+    maxWidth: { site: '1550px' },
+  }}}
+</script>
+
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-duration: .01ms !important;
+      transition-duration: .01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
+</head>
+
+<body class="bg-ink font-sans text-white leading-normal dark:bg-white dark:text-ink">
+
+<!-- ===================== ONLY EDIT BELOW THIS LINE ===================== -->
+<main class="mx-auto max-w-3xl px-6 py-10">
+  <h1 class="text-4xl font-bold text-white">Fun Facts about Myself!</h1>
+  <p class="mt-4 text-base leading-relaxed">
+      <li>I've been able to play guitar since 2025. I learned almost over 50 songs. Most of these songs are rock, pop, and alternative. I learned guitar as it was an elective in my class and from that point I started to play guitar on the daily now.</li>
+        <li>I performed once on a stage in front of a massive crowd! This was my first time and I learned a lot from it so I partake from that experience and make sure what I did the first time doesn't happen again.</li>
+        <li>I like to walk a lot since I like to explore and look at things I never seen before. This mainly happens at places I don't go to frequently since a route I take could lead into something interesting to me.</li>
+  </p>
+</main>
+
+<main class="mx-auto max-w-3xl px-6 py-10">
+  <h1 class="text-4xl font-bold text-white">Personal Interests and Hobbies</h1>
+  <p class="mt-4 text-base leading-relaxed">
+      <li>I partake in a lot of art, which is one of my main hobbies. Most of my work is inspired off of an artist called "Ryguba" and an artstyle called "Gekidan Inu Curry".</li>
+        <li>Another personal hobby I have is studying psychology. I created a project about my research called "Ur Enneagram Finder" which has been said to be proven by peers. I like to study psychology to understand my peers better.</li>
+        <li>Since 2023, I have learned to create cheorographs, lyrics, and songs.</li>
+  </p>
+</main>
+
+<main class="mx-auto max-w-3xl px-6 py-10">
+  <h1 class="text-4xl font-bold text-white">Art Gallery</h1>
+   <img src="unidentifiedemotion.jpg" alt="Zombie Girl Holding Heart" class="shrink-0">
+    <p class="mt-4 text-base leading-relaxed">
+    An old character I made in the past, there's no context of what's happening in this art.
+    <img src="kkc3.jpg" alt="From left to right, Klavdiya, Konstantin, and Caleb." class="shrink-0">
+    This is an aniamtion from Late April 2025, featuring three characters I made. From the left it is Klavdiya, Konstantin, and then Caleb. This animation is for fun and no story significance.
+    </p>
+
+    <a href="index.html" class="text-pop underline">Back to my resume</a>
+
+<!-- ===================== ONLY EDIT ABOVE THIS LINE ===================== -->
+
+</body>
+</html>
