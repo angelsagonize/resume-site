@@ -48,7 +48,7 @@ Something that was hard to write was a small background about myself. I normally
 I built an about page since I like to go in depth about myself and allow others to know me. I'd say building a blank page is dependable. If I didn't have the knowledge I'd rather prefer a template but because I know a lot throughout the lessons it was more lightweight and at a similar level of using a template. 
 ## Lesson 8 — The homepage / working as a group
 <!-- TODO -->
-
+Seeing all of my peer's works in one place is like a puzzle about to be finished. Something I saw in a classmate's page was their resume redirecting onto an actual site.
 ## Lesson 9 — Putting my site online
 <!-- TODO -->
 
