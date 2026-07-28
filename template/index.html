@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laurice Hizon</title>
-  
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name</title>
 
-  <!-- ONLY EDIT BELOW THIS LINE -->
 <!-- Font. Loaded with <link>, never a CSS @import - @import makes the browser
      wait for the stylesheet before it even discovers the font. -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,26 +13,28 @@
 <!-- Tailwind. No install, no build step. The orange console warning is expected - ignore it. -->
 <script src="https://cdn.tailwindcss.com"></script>
 
-
 <script>
- tailwind.config = { darkMode: 'class', theme: { extend: {
+  tailwind.config = { theme: { extend: {
     colors: {
       ink: '#1B1B1B',   // Body text. LOCKED - 17:1 contrast on white. Do not change.
 
       /* ============ PALETTE - EDIT THESE THREE ONLY ============ */
-      brand:  '#7F1D1D',
-      accent: '#DC2626',
-      pop:    '#FCD34D',
+      brand:  '#0C2559',
+      accent: '#2C62CC',
+      pop:    '#FFE019',
       /* ============ END PALETTE ============ */
     },
     fontFamily: { sans: ['Sora', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+    fontSize: {
+      // clamp() = fluid type. Scales smoothly with the window, no breakpoints needed.
+      display: ['clamp(3rem, 12vw, 8rem)', { lineHeight: '0.95', letterSpacing: '-0.03em' }],
+      huge:    ['clamp(2rem, 6vw, 3.5rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+    },
     maxWidth: { site: '1550px' },
   }}}
-</script> 
+</script>
 
 <style>
-  /* Respects the "reduce motion" setting some people turn on for motion sickness
-     or migraines. Costs nothing and most sites skip it. */
   @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
       animation-duration: .01ms !important;
@@ -47,74 +45,91 @@
 </style>
 </head>
 
-<body class="bg-white font-sans text-ink leading-normal dark:bg-ink dark:text-white">
+<body class="bg-ink font-sans text-white leading-normal">
 
- <header id="top" class="border-b-4 border-brand bg-white">
-  <div class="mx-auto flex max-w-3xl flex-col items-center gap-4 px-6 py-12 sm:flex-row sm:items-center sm:gap-8">
-   <img src="headshot.jpg" alt="Laurice Hizon" class="headshot">
-      <div class="text-center sm:text-left">
-      <h1 class="text-4xl font-bold leading-tight tracking-tight text-brand">Laurice Hizon</h1>
-      <p class="mt-1 text-lg text-ink">I am a sophmore who's a Summer Youth Worker at Carson. I think about being something involving to music.</p>
-      <p class="mt-3 text-base">
-        <a href="#contact" class="text-accent underline underline-offset-2 hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">Get in touch</a>
-     </p>
+<!-- ===================== ONLY EDIT BELOW THIS LINE ===================== -->
+
+<!-- HEADER -->
+<header id="top" class="px-6 pb-16 pt-20">
+  <div class="mx-auto max-w-5xl">
+    <p class="mb-6 text-sm font-bold uppercase tracking-[0.3em] text-pop">Portfolio</p>
+    <h1 class="text-display font-bold">Your<br>Name</h1>
+
+    <div class="mt-10 flex flex-col items-start gap-6 border-t-2 border-white/20 pt-8 sm:flex-row sm:items-center">
+
+      <!-- PHOTO. Using initials instead? Delete this <img> and uncomment the <div> below it. -->
+      <img src="headshot.jpg" alt="Your name" class="h-24 w-24 shrink-0 object-cover grayscale">
+      <!-- <div class="flex h-24 w-24 shrink-0 items-center justify-center bg-pop text-3xl font-bold text-ink">YN</div> -->
+
+      <p class="max-w-md text-lg text-white/80">One line about who you are</p>
     </div>
-   </div>
-  </header>
+  </div>
+</header>
 
-  <main class="mx-auto max-w-3xl px-6"></main>
+<main class="mx-auto max-w-5xl px-6">
 
-    <section id="about" class="border-b border-slate-200 py-10">
-    <h2 class="mb-4 text-sm font-bold uppercase tracking-widest text-accent">About</h2>
-    <p class="text-base leading-relaxed">
-      I take part in many arts such as music, drawing, sewing, and writing. I also like to study psychology to understand people more and discover their personality types. In school, I am currently in colorguard inside of Carson Senior Highschool. For pesronal hobbies, I play guitar, draw, and animate. My appearence is inconsistent as I go from simplistic clothing to heavy alternative styles like goth, but most of the time it would be simplistic. 
-    </p>
+  <!-- ABOUT -->
+  <section id="about" class="border-t-2 border-white/20 py-16">
+    <div class="grid gap-8 md:grid-cols-[200px_1fr]">
+      <h2 class="text-sm font-bold uppercase tracking-[0.3em] text-pop">About</h2>
+      <p class="text-huge font-bold">
+        Two or three sentences about yourself. What you are working on, what you are into.
+      </p>
+    </div>
   </section>
 
- <section id="projects" class="border-b border-slate-200 py-10">
-    <h2 class="mb-4 text-sm font-bold uppercase tracking-widest text-accent">Projects</h2>
-    <ul class="space-y-5">
-      <li>
-        <h3 class="text-lg font-bold text-brand"> Fabric Organ Painting </h3>
-        I made a piece of clothing featuring a depiction the human body. I used a old clothing I didn't wear anymore, and used fabric paint I had at home. I then used crayons to sketch the design, painted and cut it up after, and sewed it onto the clothing piece.</li>
-      </li>
-      <li>
-        <h3 class="text-lg font-bold text-brand"> Ur Ennneagram Finder </h3>
-        <p class="text-base leading-relaxed">A large project I made was creating a accurate enneagram test which I also had help from others to confirm if it was truly accurate. I used the personality data base, enneagram insitute, and Narajo and Ichazo's books.</p>
-      </li>
-    </ul>
+  <!-- PROJECTS -->
+  <section id="projects" class="border-t-2 border-white/20 py-16">
+    <div class="grid gap-8 md:grid-cols-[200px_1fr]">
+      <h2 class="text-sm font-bold uppercase tracking-[0.3em] text-pop">Projects</h2>
+      <div class="space-y-10">
+        <article class="group">
+          <h3 class="text-3xl font-bold transition group-hover:text-pop">Organ Painting</h3>
+          <p class="mt-2 max-w-2xl text-lg text-white/70">I used fabric paint and a shirt I do not use anymore. I then upcycled it and made sure the proportions of what I was going to add aligned with my top.</p>
+        </article>
+        <article class="group">
+          <h3 class="text-3xl font-bold transition group-hover:text-pop">Another project</h3>
+          <p class="mt-2 max-w-2xl text-lg text-white/70">School projects count. So does what you are learning.</p>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <section id="skills" class="border-b border-slate-200 py-10">
-    <h2 class="mb-4 text-sm font-bold uppercase tracking-widest text-accent">Skills</h2>
-    <ul class="flex flex-wrap gap-2">
-         <li class="rounded border border-brand px-3 py-1 text-sm">HTML</li>
-      <li class="rounded border border-brand px-3 py-1 text-sm">CSS</li>
-      <li class="rounded border border-brand px-3 py-1 text-sm">Learning JavaScript</li>
-      <li class="rounded border border-brand px-3 py-1 text-sm">A skill I have is that I can adapt pretty easily</li>
-      <li class="rounded border border-brand px-3 py-1 text-sm">Another skill I have is I can analyze people's instincts and personality type.</li>
-    </ul>
+  <!-- SKILLS -->
+  <section id="skills" class="border-t-2 border-white/20 py-16">
+    <div class="grid gap-8 md:grid-cols-[200px_1fr]">
+      <h2 class="text-sm font-bold uppercase tracking-[0.3em] text-pop">Skills</h2>
+      <ul class="flex flex-wrap gap-x-8 gap-y-3 text-2xl font-bold">
+        <li>HTML</li>
+        <li class="text-white/40">/</li>
+        <li>CSS</li>
+        <li class="text-white/40">/</li>
+        <li>Learning JavaScript</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact" class="py-10">
-    <h2 class="mb-4 text-sm font-bold uppercase tracking-widest text-accent">laurice.hi305@gmail.com</h2>
-    <a href="#"
-       class="inline-block rounded border-2 border-brand bg-brand px-6 py-2.5 text-base text-white no-underline transition hover:bg-accent hover:border-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
-      Email me
+  <!-- CONTACT -->
+  <section id="contact" class="border-t-2 border-white/20 py-16">
+    <div class="grid gap-8 md:grid-cols-[200px_1fr]">
+      <h2 class="text-sm font-bold uppercase tracking-[0.3em] text-pop">Contact</h2>
+      <div>
+        <a href="#"
+           class="text-huge font-bold text-white underline decoration-pop decoration-4 underline-offset-8 transition hover:text-pop focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pop">
+          Email me
+        </a>
+      </div>
+    </div>
   </section>
 
 </main>
 
-<footer id="footer" class="border-t border-slate-200 py-8 text-center text-sm text-ink">
-    <p>&copy; 2026 Laurice Hizon</p>
-  </footer>
-  <button id="dark-mode-toggle"
-        class="mx-auto mb-8 block rounded border-2 border-pop px-4 py-2 text-sm text-pop dark:border-brand dark:text-brand">
-  Dark Mode
-</button>
- <script src="script.js"></script>
-  <!-- ONLY EDIT ABOVE THIS LINE -->
+<!-- FOOTER -->
+<footer id="footer" class="border-t-2 border-white/20 px-6 py-10">
+  <p class="mx-auto max-w-5xl text-sm text-white/60">&copy; 2026 Your Name</p>
+</footer>
 
- 
+<!-- ===================== ONLY EDIT ABOVE THIS LINE ===================== -->
+
 </body>
 </html>
