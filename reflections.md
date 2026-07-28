@@ -52,3 +52,8 @@ I built an about page since I like to go in depth about myself and allow others 
 ## Lesson 9 — Putting my site online
 <!-- TODO -->
 
+### Homepage entry
+
+- **Name:** Laurice Hizon
+- **One line:** High school student who got into web development this summer.
+- **Link:** template/index.html
