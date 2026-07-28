@@ -49,8 +49,6 @@ I chose initals since it was something simplistic and if I put a photo of myself
 ## Lesson 8 — The homepage / working as a group
 <!-- TODO -->
 
-## Lesson 9 — Understanding cloud deployment (if we got to it)
+## Lesson 9 — Putting my site online
 <!-- TODO -->
 
-## Lesson 10 — Watching the live deploy (if we got to it)
-<!-- TODO -->
