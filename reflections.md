@@ -39,13 +39,13 @@ I chose the bold layout since I liked the dark color scheme of it. I unfortunate
 I chose initals since it was something simplistic and if I put a photo of myself, people may assume to judge really fast or would soon to be outdated. The file getting into the right place didn't really surprise me too much. 
 ## Lesson 5 — JavaScript
 <!-- TODO -->
-
+I expected JavaScript to be like coding and it basically was. It was less complicated than I thought since it wasn't something I was familliar with. I'd say it did since it was basically a sub piece to benefit the main part and went more in depth of what the button was supposed to do. 
 ## Lesson 6 — Building my resume
 <!-- TODO -->
-
+Something that was hard to write was a small background about myself. I normally like to go in depth for others to understand me better and get to know me on a more personal level. I am proud of writing my projects since I worked hard on both of them and felt they needed to be shown for others.
 ## Lesson 7 — My second page
 <!-- TODO -->
-
+I built an about page since I like to go in depth about myself and allow others to know me. I'd say building a blank page is dependable. If I didn't have the knowledge I'd rather prefer a template but because I know a lot throughout the lessons it was more lightweight and at a similar level of using a template. 
 ## Lesson 8 — The homepage / working as a group
 <!-- TODO -->
 
