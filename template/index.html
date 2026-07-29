@@ -42,6 +42,11 @@
       scroll-behavior: auto !important;
     }
   }
+    @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  body { animation: fadeInUp 0.6s ease-out; }
 </style>
 </head>
 
@@ -57,7 +62,7 @@
     <div class="mt-10 flex flex-col items-start gap-6 border-t-2 border-white/20 dark:border-ink/20 pt-8 sm:flex-row sm:items-center">
 
       <!-- PHOTO. Using initials instead? Delete this <img> and uncomment the <div> below it. -->
-      <img src="headshot.jpg" alt="Laurice Hizon" class="h-24 w-24 shrink-0 object-cover grayscale">
+      <img src="headshot.jpg" alt="Laurice Hizon" class="h-24 w-24 shrink-0 object-cover grayscale transition hover:scale-105">
       <!-- <div class="flex h-24 w-24 shrink-0 items-center justify-center bg-pop text-3xl font-bold text-ink">YN</div> -->
 
       <p class="max-w-md text-lg text-white/80 dark:text-ink/80">I am a sophmore who's a Summer Youth Worker at Carson. I think about being something involving to music.</p>
@@ -114,7 +119,7 @@
       <h2 class="text-sm font-bold uppercase tracking-[0.3em] text-pop dark:text-brand">Contact Information</h2>
       <div>
         <a href="mailto:https://github.com/angelsagonize"
-           class="text-huge font-bold text-white dark:text-ink underline decoration-pop dark:decoration-brand decoration-4 underline-offset-8 transition hover:text-pop dark:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pop">
+           class="text-huge font-bold text-white dark:text-ink underline decoration-pop dark:decoration-brand decoration-4 underline-offset-8 transition hover:text-pop dark:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pop transition hover:opacity-80">
           Find me on Github:
         https://github.com/angelsagonize
         </a>
@@ -126,14 +131,28 @@
 
 <!-- FOOTER -->
  <button id="light-mode-toggle"
-        class="mx-auto mb-8 block rounded border-2 border-pop px-4 py-2 text-sm text-pop dark:text-brand dark:border-brand dark:text-brand">
+        class="mx-auto mb-8 block rounded border-2 border-pop px-4 py-2 transition hover:scale-105 hover:shadow-lg">
   Light Mode
 </button>
-<footer id="footer" class="border-t-2 border-white/20 dark:border-ink/20 px-6 py-10">
+<footer id="footer" class="border-t-2 border-white/20 dark:rouborder-ink/20 px-6 py-10">
   <p class="mx-auto max-w-5xl text-sm text-white/60 dark:text-ink/60">&copy; 2026 Laurice Hizon</p>
 </footer>
 <script src="script.js"></script>
-<a href="about.html" class="text-pop underline">See my About page</a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> 
+  .center-text {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="center-text">
+<a href="about.html" class="text-pop underline transition hover:opacity-80" >See my About page</a>
+  </div>
+</body>
 <!-- ===================== ONLY EDIT ABOVE THIS LINE ===================== -->
 
 </body>
