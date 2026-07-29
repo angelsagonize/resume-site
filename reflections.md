@@ -52,19 +52,16 @@ Seeing all of my peer's works in one place is like a puzzle about to be finished
 ## Lesson 9 — Putting my site online
 <!-- TODO -->
 
-<<<<<<< HEAD
 ### Homepage entry
 
 - **Name:** Laurice Hizon
 - **One line:** High school student who got into web development this summer.
 - **Link:** template/index.html
-=======
 ## Lesson 10 — Adding motion
 <!-- TODO -->
-
+The effect that was my favorite was the fade in animation. I used this on my webpage as soon as you enter in. Yes, since it could make this appear differently.
 ## Lesson 11 — My first interactive feature
 <!-- TODO -->
 
 ## Lesson 12 — Pulling live data
 <!-- TODO -->
->>>>>>> 8fd594250840c9cfcee7cd769af48db72dfd2465
