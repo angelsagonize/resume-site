@@ -68,15 +68,20 @@
 
 <main class="mx-auto max-w-3xl px-6 py-10">
   <h1 class="text-4xl font-bold text-white">Art Gallery</h1>
-   <img src="unidentifiedemotion.jpg" alt="Zombie Girl Holding Heart" class="shrink-0">
+   <img src="unidentifiedemotion.jpg" alt="Zombie Girl Holding Heart" class="shrink-0 transition hover:scale-105 zoomable">
     <p class="mt-4 text-base leading-relaxed">
     An old character I made in the past, there's no context of what's happening in this art.
-    <img src="kkc3.jpg" alt="From left to right, Klavdiya, Konstantin, and Caleb." class="shrink-0">
+    <img src="kkc3.jpg" alt="From left to right, Klavdiya, Konstantin, and Caleb." class="shrink-0 transition hover:scale-105 zoomable">
     This is an aniamtion from Late April 2025, featuring three characters I made. From the left it is Klavdiya, Konstantin, and then Caleb. This animation is for fun and no story significance.
     </p>
 
     <a href="index.html" class="text-pop underline">Back to my resume</a>
 
+    <!-- Lightbox popup (hidden until an image is clicked) -->
+<div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4">
+  <img id="lightbox-img" src="" alt="Enlarged image" class="max-h-full max-w-full rounded-lg">
+</div>
+<script src="script.js"></script>
 <!-- ===================== ONLY EDIT ABOVE THIS LINE ===================== -->
 
 </body>

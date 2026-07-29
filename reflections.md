@@ -62,6 +62,6 @@ Seeing all of my peer's works in one place is like a puzzle about to be finished
 The effect that was my favorite was the fade in animation. I used this on my webpage as soon as you enter in. Yes, since it could make this appear differently.
 ## Lesson 11 — My first interactive feature
 <!-- TODO -->
-
+It didn't feel too different but familliar since I did something similar to this by myself in the past.
 ## Lesson 12 — Pulling live data
 <!-- TODO -->

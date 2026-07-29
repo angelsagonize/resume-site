@@ -57,6 +57,27 @@ document.addEventListener('keydown', function (e) {
     lightbox.classList.add('hidden');
     lightbox.classList.remove('flex');
   }
+});// RANDOM DOG ----------------------------------------------
+
+document.getElementById('dog-btn').addEventListener('click', function () {
+
+  // 1. Ask the dog service for a random photo.
+  fetch('https://dog.ceo/api/breeds/image/random')
+
+    // 2. When it answers, unpack the response into usable data.
+    .then(function (response) { return response.json(); })
+
+    // 3. Now we have the data — put the photo on the page.
+   .then(function (data) {
+      const dogImg = document.getElementById('dog-img');
+      dogImg.src = data.message;
+      dogImg.classList.remove('hidden');
+    })
+    .catch(function () {
+      alert('Could not reach the dog service — check your internet and try again.');
+    });
+    document.getElementById('dog-img').src = data.message;
+    
 });
 
 // ==========================================
