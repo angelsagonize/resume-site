@@ -65,3 +65,4 @@ The effect that was my favorite was the fade in animation. I used this on my web
 It didn't feel too different but familliar since I did something similar to this by myself in the past.
 ## Lesson 12 — Pulling live data
 <!-- TODO -->
+It comes from the web address that was added. I would've originally wanted my page to fetch a random selection of my art portfolio, but I think dogs are okay.

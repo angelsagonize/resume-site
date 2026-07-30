@@ -21,9 +21,9 @@ toggleButton.addEventListener('click', function () {
   // 4. Change the button's own label so it always says what it
   //    will do NEXT, not what it just did.
   if (document.documentElement.classList.contains('dark')) {
-    toggleButton.textContent = 'Light Mode';
-  } else {
     toggleButton.textContent = 'Dark Mode';
+  } else {
+    toggleButton.textContent = 'Light Mode';
   }
 });
 
@@ -57,27 +57,25 @@ document.addEventListener('keydown', function (e) {
     lightbox.classList.add('hidden');
     lightbox.classList.remove('flex');
   }
-});// RANDOM DOG ----------------------------------------------
+});
+// RANDOM DOG ----------------------------------------------
 
-document.getElementById('dog-btn').addEventListener('click', function () {
-
+document.getElementById('cat-btn').addEventListener('click', function () {
+  document.getElementById('cat-img').src = data.url;
   // 1. Ask the dog service for a random photo.
-  fetch('https://dog.ceo/api/breeds/image/random')
+  fetch('https://cataas.com/cat?json=true')
 
     // 2. When it answers, unpack the response into usable data.
     .then(function (response) { return response.json(); })
 
     // 3. Now we have the data — put the photo on the page.
-   .then(function (data) {
-      const dogImg = document.getElementById('dog-img');
-      dogImg.src = data.message;
-      dogImg.classList.remove('hidden');
+        .then(function (data) {
+      const catImg = document.getElementById('cat-img');
+      catImg.src = data.message;
+      catImg.classList.remove('hidden');
     })
     .catch(function () {
-      alert('Could not reach the dog service — check your internet and try again.');
-    });
-    document.getElementById('dog-img').src = data.message;
-    
+      alert('Could not reach the cat service — check your internet and try again.');
+    })
 });
-
 // ==========================================
