@@ -77,7 +77,7 @@ document.addEventListener('keydown', function (e) {
     lightbox.classList.remove('flex');
   }
 });
-// RANDOM DOG ----------------------------------------------
+// RANDOM THING!!!!!!!!!!!! ----------------------------------------------
 
 document.getElementById('cat-btn').addEventListener('click', function () {
   document.getElementById('cat-img').src = data.url;
