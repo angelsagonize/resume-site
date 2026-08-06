@@ -77,24 +77,21 @@ document.addEventListener('keydown', function (e) {
     lightbox.classList.remove('flex');
   }
 });
-// RANDOM THING!!!!!!!!!!!! ----------------------------------------------
+// RANDOM DOG ----------------------------------------------
 
-document.getElementById('cat-btn').addEventListener('click', function () {
-  document.getElementById('cat-img').src = data.url;
+document.getElementById('dog-btn').addEventListener('click', function () {
+
   // 1. Ask the dog service for a random photo.
-  fetch('https://cataas.com/cat?json=true')
+  fetch('https://dog.ceo/api/breeds/image/random')
 
     // 2. When it answers, unpack the response into usable data.
     .then(function (response) { return response.json(); })
 
     // 3. Now we have the data — put the photo on the page.
-        .then(function (data) {
-      const catImg = document.getElementById('cat-img');
-      catImg.src = data.message;
-      catImg.classList.remove('hidden');
-    })
-    .catch(function () {
-      alert('Could not reach the cat service — check your internet and try again.');
-    })
+    .then(function (data) {
+      const dogImg = document.getElementById('dog-img');
+      dogImg.src = data.message;          // the photo's web address
+      dogImg.classList.remove('hidden');  // reveal it
+    });
 });
 // ==========================================
